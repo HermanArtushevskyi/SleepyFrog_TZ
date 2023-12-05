@@ -7,11 +7,8 @@ namespace CodeBase.DataSaver
 {
     public class PlayerPrefsSaver : ISaver, ILoader
     {
-        private readonly string _filePath;
-        
-        public PlayerPrefsSaver(string filePath)
+        public PlayerPrefsSaver()
         {
-            _filePath = filePath;
         }
 
 
@@ -21,7 +18,7 @@ namespace CodeBase.DataSaver
             if (savableAttribute == null)
                 return false;
             string json = JsonUtility.ToJson(data);
-            PlayerPrefs.SetString(_filePath + savableAttribute.SaveName, json);
+            PlayerPrefs.SetString(savableAttribute.SaveName, json);
             return true;
         }
 
@@ -31,7 +28,7 @@ namespace CodeBase.DataSaver
             SavableAttribute savableAttribute = typeof(T).GetCustomAttribute<SavableAttribute>();
             if (savableAttribute == null)
                 return false;
-            string json = PlayerPrefs.GetString(_filePath + savableAttribute.SaveName);
+            string json = PlayerPrefs.GetString(savableAttribute.SaveName);
             result = JsonUtility.FromJson<T>(json);
             return true;
         }

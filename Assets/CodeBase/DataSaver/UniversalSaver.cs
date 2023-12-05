@@ -14,7 +14,7 @@ namespace CodeBase.DataSaver
         {
             _binarySaver = new BinarySaver(saveSettings.PersistentDataPath);
             _jsonSaver = new JsonSaver(saveSettings.PersistentDataPath);
-            _playerPrefsSaver = new PlayerPrefsSaver(saveSettings.PersistentDataPath);
+            _playerPrefsSaver = new PlayerPrefsSaver();
         }
 
         public bool Save(object data)

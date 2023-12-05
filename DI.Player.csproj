@@ -43,6 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\CodeBase\DI\GlobalInstallers\GlobalDependenciesInstaller.cs" />
      <Compile Include="Assets\CodeBase\DI\MainMenuInstallers\MainMenuUIInstaller.cs" />
+     <Compile Include="Assets\CodeBase\DI\MainMenuInstallers\MainMenuFactoriesInstaller.cs" />
      <None Include="Assets\CodeBase\DI\DI.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.13f1\Editor\2022.1.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>
@@ -665,21 +666,37 @@
       <Project>{5591d572-2bac-f04e-16a4-8e01c212e5fc}</Project>
       <Name>Factories.Interfaces.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="StateMachine.Player.csproj">
-      <Project>{a6c8494e-ecb6-571b-19e0-90bd93bb8a5b}</Project>
-      <Name>StateMachine.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="StateMachine.Interfaces.Player.csproj">
-      <Project>{cbb07312-dc99-fa63-2b61-c5ea60c5ca90}</Project>
-      <Name>StateMachine.Interfaces.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="StateMachine.Common.Player.csproj">
-      <Project>{3545259a-ccb2-cc2d-13b4-0584a26efcee}</Project>
-      <Name>StateMachine.Common.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="UI.Player.csproj">
       <Project>{5b101d2c-b0f5-6ee7-a42d-c682f6d4d67e}</Project>
       <Name>UI.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="DataSaver.Interfaces.Player.csproj">
+      <Project>{0a650dd2-7d1a-3172-bb0f-82fbb3452af7}</Project>
+      <Name>DataSaver.Interfaces.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="DataSaver.Player.csproj">
+      <Project>{d4984caf-1074-a115-37a6-f1c88858e56a}</Project>
+      <Name>DataSaver.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Input.Player.csproj">
+      <Project>{4631e34b-2c1a-75b5-95a2-f9813eed5b2b}</Project>
+      <Name>Input.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Input.Common.Player.csproj">
+      <Project>{dfd5630b-15e8-2229-b718-3300ecd83d23}</Project>
+      <Name>Input.Common.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Input.Interfaces.Player.csproj">
+      <Project>{519b2eb9-1f3c-d2ab-8ba6-9c3736813370}</Project>
+      <Name>Input.Interfaces.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Settings.Player.csproj">
+      <Project>{dfe7be33-985e-5c91-d683-dba8bc2ddbee}</Project>
+      <Name>Settings.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityInput.Player.csproj">
+      <Project>{773d03e4-3ac4-e825-402e-932eccafd0e6}</Project>
+      <Name>UnityInput.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{26f1dae9-aca0-c3cb-529c-fcfe2bdff3e0}</Project>
