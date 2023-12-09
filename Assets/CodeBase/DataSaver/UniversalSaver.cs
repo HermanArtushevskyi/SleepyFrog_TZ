@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using CodeBase.DataSaver.Common;
 using CodeBase.DataSaver.Interfaces;
+using UnityEngine;
 
 namespace CodeBase.DataSaver
 {
@@ -12,8 +13,8 @@ namespace CodeBase.DataSaver
         
         public UniversalSaver(SaveSettings saveSettings)
         {
-            _binarySaver = new BinarySaver(saveSettings.PersistentDataPath);
-            _jsonSaver = new JsonSaver(saveSettings.PersistentDataPath);
+            _binarySaver = new BinarySaver(Application.persistentDataPath);
+            _jsonSaver = new JsonSaver(Application.persistentDataPath);
             _playerPrefsSaver = new PlayerPrefsSaver();
         }
 

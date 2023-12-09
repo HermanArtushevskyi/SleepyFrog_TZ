@@ -1,3 +1,18 @@
 {
-	"name": "EnemyBehaviour"
+    "name": "EnemyBehaviour",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c2851dd397dff414ab2158c4369dd752",
+        "GUID:e52325a7d1801d448ab9c4b1c0461153",
+        "GUID:fb18ab612ee9da7439f366c64c1f68b9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

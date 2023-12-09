@@ -1,0 +1,16 @@
+{
+    "name": "ObjectPooling",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b70c01603b7c3cd4a9798ae887fff871"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -41,8 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\CodeBase\DI\GameInstallers\SceneObjectsInstaller.cs" />
      <Compile Include="Assets\CodeBase\DI\GlobalInstallers\GlobalDependenciesInstaller.cs" />
      <Compile Include="Assets\CodeBase\DI\MainMenuInstallers\MainMenuUIInstaller.cs" />
+     <Compile Include="Assets\CodeBase\DI\GameInstallers\PrefabInstaller.cs" />
+     <Compile Include="Assets\CodeBase\DI\GameInstallers\GameFactoriesInstaller.cs" />
      <Compile Include="Assets\CodeBase\DI\MainMenuInstallers\MainMenuFactoriesInstaller.cs" />
      <None Include="Assets\CodeBase\DI\DI.asmdef" />
      <Reference Include="UnityEngine">
@@ -670,6 +673,10 @@
       <Project>{5b101d2c-b0f5-6ee7-a42d-c682f6d4d67e}</Project>
       <Name>UI.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="DataSaver.Common.Player.csproj">
+      <Project>{c49170e1-66d8-c5ec-b3a0-4fbd104156b9}</Project>
+      <Name>DataSaver.Common.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="DataSaver.Interfaces.Player.csproj">
       <Project>{0a650dd2-7d1a-3172-bb0f-82fbb3452af7}</Project>
       <Name>DataSaver.Interfaces.Player</Name>
@@ -697,6 +704,38 @@
     <ProjectReference Include="UnityInput.Player.csproj">
       <Project>{773d03e4-3ac4-e825-402e-932eccafd0e6}</Project>
       <Name>UnityInput.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Common.Player.csproj">
+      <Project>{778a5a98-d32b-c370-80f9-de7dab8d3c6a}</Project>
+      <Name>Common.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="CharacterController.Player.csproj">
+      <Project>{7d52baf2-5f18-6bc4-fc46-df470105440d}</Project>
+      <Name>CharacterController.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="EnemyBehaviour.Player.csproj">
+      <Project>{e1b6d2a7-d4af-40a3-1371-385394fd36cf}</Project>
+      <Name>EnemyBehaviour.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="EnemySpawner.Player.csproj">
+      <Project>{91175bdc-ee29-376a-4bfb-34014630f9d3}</Project>
+      <Name>EnemySpawner.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="KillCounter.Player.csproj">
+      <Project>{b996f5e2-e563-1fad-4d90-0cfe4912f2c2}</Project>
+      <Name>KillCounter.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="ResultManager.Player.csproj">
+      <Project>{328ec1c4-be08-ac5c-a963-54ca03ff8eb2}</Project>
+      <Name>ResultManager.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="HealthCounter.Player.csproj">
+      <Project>{56662635-fe35-24ba-8904-0502df1bb42d}</Project>
+      <Name>HealthCounter.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameTimer.Player.csproj">
+      <Project>{1923a0c7-9aab-cbcf-8d68-b753b4ae91fd}</Project>
+      <Name>GameTimer.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{26f1dae9-aca0-c3cb-529c-fcfe2bdff3e0}</Project>

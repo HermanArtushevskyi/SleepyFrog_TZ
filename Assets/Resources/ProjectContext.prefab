@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _monoContext: {fileID: 3138564806891530146}
+  _saveSettings: {fileID: 11400000, guid: d9345307d57b69640853bec179d2aa73, type: 2}
 --- !u!114 &3138564806891530146
 MonoBehaviour:
   m_ObjectHideFlags: 0

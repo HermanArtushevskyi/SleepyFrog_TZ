@@ -1,0 +1,20 @@
+{
+    "name": "EnemySpawner",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b70c01603b7c3cd4a9798ae887fff871",
+        "GUID:c2851dd397dff414ab2158c4369dd752",
+        "GUID:e52325a7d1801d448ab9c4b1c0461153",
+        "GUID:19d57d5e8b5fb974c8cfee2d7335701d",
+        "GUID:d3c645d1272dc2d4590b6f7b1866d05f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

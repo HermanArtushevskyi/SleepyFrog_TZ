@@ -5,7 +5,7 @@ namespace CodeBase.Input
 {
     public class InputClearer : IInputSource
     {
-        public int Priority => 0;
+        public int Priority => 9999;
         
         public void FillInput(ref InputData inputData)
         {
