@@ -31,6 +31,8 @@ namespace CodeBase.DataSaver
             SavableAttribute savableAttribute = typeof(T).GetCustomAttribute<SavableAttribute>();
             if (savableAttribute == null)
                 return false;
+            if (!File.Exists(_filePath + savableAttribute.SaveName))
+                return false;
             string json = File.ReadAllText(_filePath + savableAttribute.SaveName);
             result = JsonUtility.FromJson<T>(json);
             return true;

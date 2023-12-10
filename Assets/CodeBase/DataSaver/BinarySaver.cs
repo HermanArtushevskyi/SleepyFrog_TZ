@@ -37,6 +37,9 @@ namespace CodeBase.DataSaver
             if (savableAttribute == null)
                 return false;
             
+            if (!File.Exists(_filePath + savableAttribute.SaveName))
+                return false;
+            
             BinaryReader binaryReader = new BinaryReader(File.Open(_filePath + savableAttribute.SaveName, FileMode.OpenOrCreate));
             
             string typeName = binaryReader.ReadString();

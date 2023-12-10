@@ -1,3 +1,24 @@
 {
-	"name": "ResultManager"
+    "name": "ResultManager",
+    "rootNamespace": "",
+    "references": [
+        "GUID:184e8219c5ad6e14b84145d66ffae064",
+        "GUID:2a9ea3f9eeea96145a1c993515605dff",
+        "GUID:2bf72b836135ccc4d8ebc9e99db4a4ee",
+        "GUID:fb18ab612ee9da7439f366c64c1f68b9",
+        "GUID:d9c26ce426187b447bd35a9aeddf1b9f",
+        "GUID:c472acf1ee3fc484aa334579ab6e0352",
+        "GUID:b1093730b8ba69247ac81ff8168d938e",
+        "GUID:e52325a7d1801d448ab9c4b1c0461153",
+        "GUID:3bfbeb0a0e7ec684a8c85b9d34dd0100"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

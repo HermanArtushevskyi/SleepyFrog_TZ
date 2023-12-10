@@ -1,13 +1,22 @@
-﻿using CodeBase.Factories.Interfaces;
-using CodeBase.UI.Game;
+﻿using CodeBase.UI.Game;
+using Zenject;
 
 namespace CodeBase.Factories
 {
-    public class GameUIFactory : IFactory<GamePresenter>
+    public class GameUIFactory : Interfaces.IFactory<GamePresenter>
     {
+        private readonly DiContainer _container;
+
+        public GameUIFactory(DiContainer container)
+        {
+            _container = container;
+        }
+
         public GamePresenter Create()
         {
-            throw new System.NotImplementedException();
+            GamePresenter presenter = _container.Instantiate<GamePresenter>();
+            _container.Bind<GamePresenter>().FromInstance(presenter).AsSingle();
+            return presenter;
         }
     }
 }

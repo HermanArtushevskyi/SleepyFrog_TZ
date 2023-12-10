@@ -4,6 +4,10 @@
     {
         Player,
         Camera,
-        Enemy
+        Enemy,
+        Health,
+        AudioSource,
+        SwordSwingAudioClip,
+        Combo
     }
 }

@@ -11,5 +11,10 @@ namespace CodeBase.DI.MainMenuInstallers
         {
             Container.Bind<IFactories.IFactory<MainMenuPresenter>>().To<MainMenuFactory>().AsSingle();
         }
+        
+        private void OnDestroy()
+        {
+            Container.UnbindAll();
+        }
     }
 }

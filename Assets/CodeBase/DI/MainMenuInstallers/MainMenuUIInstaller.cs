@@ -12,5 +12,10 @@ namespace CodeBase.DI.MainMenuInstallers
         {
             Container.Bind<MainMenuView>().FromInstance(_view).AsSingle();
         }
+        
+        private void OnDestroy()
+        {
+            Container.UnbindAll();
+        }
     }
 }

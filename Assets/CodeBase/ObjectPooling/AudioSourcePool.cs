@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace CodeBase.ObjectPooling
 {
-    public class GameObjectPool : IPool<GameObject>
+    public class AudioSourcePool : IPool<AudioSource>
     {
         private GameObject _prefab;
         private IFactory<GameObject, GameObject> _gameObjectFactory;
         
-        private Queue<GameObject> queue { get; } = new();
+        private Queue<AudioSource> queue { get; } = new();
         
-        public GameObjectPool(GameObject prefab, int initialSize, IFactory<GameObject, GameObject> gameObjectFactory)
+        public AudioSourcePool(GameObject prefab, int initialSize, IFactory<GameObject, GameObject> gameObjectFactory)
         {
             _prefab = prefab;
             _gameObjectFactory = gameObjectFactory;
@@ -22,18 +22,18 @@ namespace CodeBase.ObjectPooling
             }
         }
 
-        public GameObject Get()
+        public AudioSource Get()
         {
             if (queue.Count == 0)
                 CreateInstance(_prefab, _gameObjectFactory);
-            GameObject instance = queue.Dequeue();
-            instance.SetActive(true);
+            AudioSource instance = queue.Dequeue();
+            instance.gameObject.SetActive(true);
             return instance;
         }
 
-        public void Return(GameObject item)
+        public void Return(AudioSource item)
         {
-            item.SetActive(false);
+            item.gameObject.SetActive(false);
             queue.Enqueue(item);
         }
 
@@ -41,7 +41,7 @@ namespace CodeBase.ObjectPooling
         {
             GameObject instance = gameObjectFactory.Create(prefab);
             instance.SetActive(false);
-            queue.Enqueue(instance);
+            queue.Enqueue(instance.GetComponent<AudioSource>());
         }
     }
 }

@@ -12,6 +12,11 @@ namespace CodeBase.Factories
             _container = container;
         }
 
-        public GameObject Create(GameObject param) => _container.InstantiatePrefab(param);
+        public GameObject Create(GameObject param)
+        {
+            GameObject gameobj = _container.InstantiatePrefab(param);
+            gameobj.name = param.name;
+            return gameobj;
+        }
     }
 }

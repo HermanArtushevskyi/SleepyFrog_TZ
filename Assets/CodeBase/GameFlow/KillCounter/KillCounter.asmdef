@@ -1,3 +1,19 @@
 {
-	"name": "KillCounter"
+    "name": "KillCounter",
+    "rootNamespace": "",
+    "references": [
+        "GUID:09bda85ffba0fa544b4524916296d49d",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:c2851dd397dff414ab2158c4369dd752",
+        "GUID:e52325a7d1801d448ab9c4b1c0461153"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

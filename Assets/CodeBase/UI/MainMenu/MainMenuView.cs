@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace CodeBase.UI.MainMenu
@@ -9,6 +10,7 @@ namespace CodeBase.UI.MainMenu
         [SerializeField] public Button _exitButton;
         [SerializeField] public Button _soundButton;
         [SerializeField] public Image _soundImage;
+        [SerializeField] public TextMeshProUGUI _highScoreText;
         
         [Space(10)]
         [SerializeField] public Sprite _soundOnSprite;

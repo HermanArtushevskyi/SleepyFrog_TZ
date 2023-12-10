@@ -1,5 +1,6 @@
 ﻿using CodeBase.Common;
 using CodeBase.EnemyBehaviour;
+using CodeBase.GameFlow.EnemySpawner;
 using CodeBase.GameFlow.GameTimer;
 using CodeBase.UI.Game;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace CodeBase.Entrypoints
         private IFactories.IGameObjectFactory<EEnemyBehaviour, ScriptableEnemy, Vector3> _enemyFactory;
         private ScriptableEnemy[] _enemiesPrefabs;
         private Timer _timer;
+        private EnemySpawner _enemySpawner;
 
         [Inject]
         private void Construct(
@@ -28,7 +30,8 @@ namespace CodeBase.Entrypoints
             IFactories.IFactory<GamePresenter> uiFactory,
             IFactories.IFactory<EEnemyBehaviour, ScriptableEnemy, Vector3> enemyFactory, 
             [InjectOptional(Id = PrefabId.Enemy)] ScriptableEnemy[] enemiesPrefabs,
-            Timer timer)
+            Timer timer,
+            EnemySpawner enemySpawner)
         {
             _playerFactory = playerFactory;
             _cameraFactory = cameraFactory;
@@ -36,6 +39,7 @@ namespace CodeBase.Entrypoints
             _enemyFactory = enemyFactory as IFactories.IGameObjectFactory<EEnemyBehaviour, ScriptableEnemy, Vector3>;
             _enemiesPrefabs = enemiesPrefabs;
             _timer = timer;
+            _enemySpawner = enemySpawner;
         }
         
         private void Start()
@@ -44,6 +48,7 @@ namespace CodeBase.Entrypoints
             _cameraFactory.Create(player.gameObject);
             _uiFactory.Create();
             AddPoolsToEnemyFactory();
+            _enemySpawner.Start();
             _timer.Start();
         }
 

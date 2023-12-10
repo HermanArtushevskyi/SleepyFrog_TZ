@@ -1,9 +1,13 @@
 {
-    "name": "HealthCounter",
+    "name": "Audio",
     "rootNamespace": "",
     "references": [
+        "GUID:86db66edb7d5de546971f5051d7e597c",
         "GUID:c2851dd397dff414ab2158c4369dd752",
-        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:b70c01603b7c3cd4a9798ae887fff871",
+        "GUID:e52325a7d1801d448ab9c4b1c0461153",
+        "GUID:13d35efa998c92247bfadc9985edcaae"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

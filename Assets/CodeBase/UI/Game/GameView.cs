@@ -10,5 +10,6 @@ namespace CodeBase.UI.Game
         public List<GameObject> HealthSprites;
         public TextMeshProUGUI KillsCountText;
         public GameObject GameOverPanel;
+        public TextMeshProUGUI KillsCountGameOverText;
     }
 }

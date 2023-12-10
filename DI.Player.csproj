@@ -47,6 +47,7 @@
      <Compile Include="Assets\CodeBase\DI\GameInstallers\PrefabInstaller.cs" />
      <Compile Include="Assets\CodeBase\DI\GameInstallers\GameFactoriesInstaller.cs" />
      <Compile Include="Assets\CodeBase\DI\MainMenuInstallers\MainMenuFactoriesInstaller.cs" />
+     <Compile Include="Assets\CodeBase\DI\GameInstallers\GameServicesInstaller.cs" />
      <None Include="Assets\CodeBase\DI\DI.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.13f1\Editor\2022.1.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>
@@ -736,6 +737,10 @@
     <ProjectReference Include="GameTimer.Player.csproj">
       <Project>{1923a0c7-9aab-cbcf-8d68-b753b4ae91fd}</Project>
       <Name>GameTimer.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Audio.Player.csproj">
+      <Project>{bb165429-2ae7-b016-c43d-4a38ca45b88f}</Project>
+      <Name>Audio.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{26f1dae9-aca0-c3cb-529c-fcfe2bdff3e0}</Project>

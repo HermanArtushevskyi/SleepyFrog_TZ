@@ -2,7 +2,8 @@
     "name": "ObjectPooling",
     "rootNamespace": "",
     "references": [
-        "GUID:b70c01603b7c3cd4a9798ae887fff871"
+        "GUID:b70c01603b7c3cd4a9798ae887fff871",
+        "GUID:fb18ab612ee9da7439f366c64c1f68b9"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

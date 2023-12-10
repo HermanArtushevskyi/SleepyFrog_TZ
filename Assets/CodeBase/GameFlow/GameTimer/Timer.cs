@@ -9,9 +9,9 @@ namespace CodeBase.GameFlow.GameTimer
         public float TickCount => _tickCount;
         public float Seconds => _seconds;
         
-        private float _fixedTickCount;
-        private float _tickCount;
-        private float _seconds;
+        private float _fixedTickCount = 0;
+        private float _tickCount = 0;
+        private float _seconds = 0;
         
         private readonly IFixedUpdateCallback _fixedUpdateCallback;
         private readonly IUpdateCallback _updateCallback;
